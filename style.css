@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200&display=swap');
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+nav ul li{
+    list-style: none;
+
+}
+
+/* ///////////// */
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0px;
+  
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* or apply any other transformation */
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+/* """""""""""""""""""""""""""""""" */
+.content1{
+    color: rgb(251, 251, 251);
+    font-size: xx-large;
+    background-color: #3333339d;
+}
+.content2{
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: #3333339d;
+    
+}
+.video1{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+/* ????????????????????/ */
+
+.headings{
+  
+    font-size: xx-large;
+    text-align: center;
+    color: #fff;
+
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.cardimg {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: contain;
+
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+/* :::::::::::::::::::::::::::::::: */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 50px; 
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.video:hover .video-overlay {
+    opacity: 1;
+}
+
+.video-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.pp{
+    color: white;
+}
+
+/* ??????????????????????? */
+/* ......................................footer css...................................... */
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+    font-family: 'Saira Extra Condensed', sans-serif;
+
+
+
+}
+.pp{
+    font-size: 10px;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+    display: flex;
+}
+
+.footer .col a:hover {
+    color: #8804adbc;
+}
+
+.footer .language-btn {
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 3px;
+
+
+}
+
+.copyright-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ???????????????/ */
+
+
+@media screen and (max-width: 600px) {
+    .content1{
+        font-size: 7px;
+
+    }
+    .content2{
+        font-size: 7px;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .cardimg {
+        width: 100%;
+        height: 100px; /* Adjust the height as needed */
+        object-fit: contain;
+    
+    }
+    .card-content {
+        padding: 4px;
+    }
+    
+    .card h3 {
+        display: flex;
+        font-size: 10px;
+        margin: 0;
+        color: #333;
+        visibility: hidden;
+    }
+    .headings{
+        font-size: 17px;
+    }
+    .footer h2{
+        font-size: 16px;
+    }
+}

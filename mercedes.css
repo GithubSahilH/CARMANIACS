@@ -1,0 +1,61 @@
+.mercedeseimg {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.mercedesecontent {
+  color: white;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  color: white;
+}
+
+.brighten img {
+    -webkit-filter: brightness(50%);
+  
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.brighten img:hover {
+  -webkit-filter: brightness(100%);
+  
+}
+
+.lastcont{
+    display: flex;
+    flex-direction: row;
+
+}
+.lastimg{
+    height: -webkit-fill-available;
+    width: 50%;
+}
+
+.lastp{
+    color: white;
+    text-align: center;
+    margin-top: 230px;
+}
+/* ////////////////////////// */
+
+@media screen and (max-width: 600px) {
+  .mercedesecontent {
+    font-size: 12px;
+  }
+  .lastp{
+    font-size: 12px;
+    
+    margin-top: 0px;
+  }
+  .lastimg{
+    height: -webkit-fill-available;
+    width: 80%%;
+}
+
+}
